@@ -1,0 +1,25 @@
+{
+  "books": [{
+    "title": "The Iliad and The Odyssey",
+    "price": 12.95,
+    "comments": [{
+      "rating": 4,
+      "comment": "Best translation I've read."
+    }, {
+      "rating": 2,
+      "comment": "I like other versions better."
+    }]
+  },
+    {
+      "title": "Anthology of World Literature",
+      "price": 24.95,
+      "comments": [{
+        "rating": 4,
+        "comment": "Excellent overview of world literature."
+      }, {
+        "rating": 3,
+        "comment": "Needs more modern literature."
+      }]
+    }
+  ]
+}
