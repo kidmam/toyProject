@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    <book>
+        <title>The Iliad and The Odyssey</title>
+        <price>12.95</price>
+        <comments>
+            <userComment rating="4">Best translation I've read.</userComment>
+            <userComment rating="2">I like other versions better.</userComment>
+        </comments>
+    </book>
+    <book>
+        <title>Anthology of World Literature</title>
+        <price>24.95</price>
+        <comments>
+            <userComment rating="3">Needs more modern literature.</userComment>
+            <userComment rating="4">Excellent overview of world literature.</userComment>
+        </comments>
+    </book>
+</bookstore>
