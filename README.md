@@ -10,6 +10,6 @@ Client
 
  - Vue
 
-- TypeScript
+ - TypeScript
 
  - axios
