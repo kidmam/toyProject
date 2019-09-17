@@ -11,3 +11,17 @@ type LinkedList struct {
 	last   *Node // The last Node
 	length int   // The number of nodes
 }
+
+func (l *LinkedList) Append(n *Node) {
+	// We check if our Linked list is empty
+	if l.length == 0 {
+		l.first = n // If it is, we set the first Node to the new Node
+		l.last = n  // We also set the last Node to the new Node
+		l.length++  // Finally, we increment the length
+		return
+	}
+
+	l.last.next = n // We link our last Node to out new last Node
+	l.last = n      // Then, we set the last Node Node to the new Node
+	l.length++      // And finally, we increment the length
+}
