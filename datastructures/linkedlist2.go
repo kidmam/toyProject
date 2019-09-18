@@ -40,3 +40,22 @@ func (l *LinkedList) Prepend(n *Node) {
 	l.first.next = firstNode // Finally we linke the new first Node to the old one
 	l.length++               // And then, we increment the length
 }
+
+func (l *LinkedList) Lookup() []int {
+	// If the list is empty we return nil
+	if l.length == 0 {
+		return nil
+	}
+
+	var nodes []int
+	node := l.first
+
+	// If the next Node is nil (doesn't exist) it means that
+	// we're done.
+	for node != nil {
+		nodes = append(nodes, node.value)
+		node = node.next
+	}
+
+	return nodes // Then, we can return the slice with all the values found
+}
