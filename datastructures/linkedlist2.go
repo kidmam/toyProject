@@ -59,3 +59,34 @@ func (l *LinkedList) Lookup() []int {
 
 	return nodes // Then, we can return the slice with all the values found
 }
+
+func (l *LinkedList) Delete(v int) {
+	// If the list is empty we have nothing to delete.
+	if l.length == 0 {
+		return
+	}
+
+	// If instead, the Node to delete is the first one on our list
+	// we can remove it directly.
+	if l.first.value == v {
+		l.first = l.first.next // We set the first Node to the second Node
+		l.length--             // Then, we decrement the length of our list
+		return
+	}
+
+	var prevNode *Node // A reference to the previous Node of the one we are looking for
+	node := l.first
+	for node.value != v {
+		// If we have reached the end of the list it means that
+		// our Node doesn't exist and that we have nothing to remove.
+		if node == nil {
+			return
+		}
+
+		prevNode = node
+		node = node.next
+	}
+
+	prevNode.next = node.next // We remove the Node by removing the reference to it from the previous one
+	l.length--                // Finally, we decrement the length
+}
