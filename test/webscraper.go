@@ -82,6 +82,7 @@ func findLinks(links []string, n *html.Node) []string {
 }
 
 func formatURL(base, url string) string {
+
 	base = strings.TrimSuffix(base, "/")
 
 	switch {
