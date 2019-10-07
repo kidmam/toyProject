@@ -8,7 +8,7 @@ Server
 
 Client
 
- - Vue
+ - Vue, Vuex
 
  - TypeScript
 
