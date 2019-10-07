@@ -4,7 +4,7 @@ Toy Project
 
 Server
 
- - Go
+ - Golang
 
 Client
 
