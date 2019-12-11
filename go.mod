@@ -3,6 +3,7 @@ module toyProject
 go 1.12
 
 require (
+	github.com/aws/aws-lambda-go v1.13.3 // indirect
 	github.com/prasmussen/gdrive v0.0.0-20190729024329-8e12e1c1c961 // indirect
 	github.com/sabhiram/go-git-ignore v0.0.0-20180611051255-d3107576ba94 // indirect
 	github.com/soniakeys/graph v0.0.0 // indirect
